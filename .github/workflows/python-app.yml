@@ -30,9 +30,9 @@ jobs:
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
         sudo apt-get update
         sudo apt-get upgrade
-        sudo apt install docker.io
-        systemctl start docker
-        systemctl enable docker
+        #sudo apt install docker.io
+        #systemctl start docker
+        #systemctl enable docker
         docker --version
     - name: Lint with flake8
       run: |
