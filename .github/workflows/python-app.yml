@@ -39,8 +39,6 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
         docker --version
         # docker build -t hello_world .
-        # docker build -t streamlitapp:latest .
-        # docker run streamlitapp
         docker build -t streamlit .
         docker run -p 8501:8501 streamlit
         
